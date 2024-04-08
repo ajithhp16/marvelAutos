@@ -57,7 +57,7 @@ class Bills(models.Model):
     deliver_date = models.DateTimeField(verbose_name="Date when vehicle is delivered after servicing")
     total_charges = models.DecimalField(max_digits=7, decimal_places=2)
     discount_applied = models.PositiveIntegerField()
-    paid_charges = models.DecimalField(max_field=7, decimal_places=2)
+    paid_charges = models.DecimalField(max_digits=7, decimal_places=2)
 
     
 class VehicleServicings(models.Model):
