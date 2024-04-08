@@ -5,7 +5,7 @@ class Users(models.Model):
     user_id = models.AutoField(primary_key=True)
     first_name = models.CharField(verbose_name="Person's first name", max_length=30, null=False)
     last_name = models.CharField(verbose_name="Person's last name", max_length=30, default=".")
-    users_slug = models.SlugField()
+    users_slug = models.SlugField(default="users_slug")
     dob = models.DateField(verbose_name="Person's Date Of Birth")
     contact_number = models.CharField(verbose_name="Person's Contact Number", max_length=15, null=False, unique=True)
     mail_address = models.EmailField(verbose_name="Peron's Mail Address", max_length=50, null=False, unique=True)
