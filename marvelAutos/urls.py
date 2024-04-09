@@ -20,5 +20,5 @@ from marvelAutosApp import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', include(urls))
+    path('userApp/', include(urls))
 ]
