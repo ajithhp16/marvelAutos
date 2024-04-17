@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <h1>Welcome to MarvelAutos Service Login</h1>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">Log In</button>
+        </form>
+    </body>
+</html>

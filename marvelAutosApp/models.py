@@ -8,7 +8,8 @@ class Users(models.Model):
     users_slug = models.SlugField(default="users_slug")
     dob = models.DateField(verbose_name="Person's Date Of Birth")
     contact_number = models.CharField(verbose_name="Person's Contact Number", max_length=15, null=False, unique=True)
-    mail_address = models.EmailField(verbose_name="Peron's Mail Address", max_length=50, null=False, unique=True)
+    mail_address = models.EmailField(verbose_name="Person's Mail Address", max_length=50, null=False, unique=True)
+    password = models.CharField(verbose_name="Person has to set Password for Login purpose", max_length=100, null=False, default="password")
     address = models.CharField(verbose_name="Person's Address", max_length=500)
     
     def __str__(self):

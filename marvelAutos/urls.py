@@ -20,5 +20,6 @@ from marvelAutosApp import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('userApp/', include(urls))
+    path('userApp/', include(urls)),
+    path('accounts/', include("django.contrib.auth.urls"))
 ]
